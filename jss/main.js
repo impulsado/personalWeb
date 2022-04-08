@@ -1,7 +1,7 @@
 const about = document.querySelector('#about')
-const contact = document.querySelector('#contact')
+const projects = document.querySelector('#contact')
 const aboutContent = document.querySelector('#about-content')
-const contactContent = document.querySelector('#contact-content')
+const projectsContent = document.querySelector('#projects-content')
 
 about.addEventListener('click', () => {
   const aboutBox = new WinBox({
@@ -22,7 +22,7 @@ about.addEventListener('click', () => {
   })
 })
 
-contact.addEventListener('click', () => {
+projects.addEventListener('click', () => {
   const projects = new WinBox({
     title: 'Projects',
     width: '400px',
@@ -31,7 +31,7 @@ contact.addEventListener('click', () => {
     right: 50,
     bottom: 50,
     left: 50,
-    mount: contactContent,
+    mount: projectsContent,
     onfocus: function () {
       this.setBackground('#5B5B5B')
     },
